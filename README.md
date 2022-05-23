@@ -2,7 +2,7 @@
 In this project we are building a classification model to predict customers churn.
 We will evaluate the results using ROC-AUC.
 
-Steps in the project:
+## Steps in the project:
 1. Preprocessing and EDA of the data, follwing by merging all tables into the main DataFrame. As we have different number of users under different services (internet and phone), after merging the tables had NA's for users who have no additional services - replace this Yes/No NA's with 0 and Internet service NA's with category of 'No service' - Done.
 
 
@@ -27,7 +27,7 @@ Steps in the project:
 8. Build a function that will get a model, set of param and run GridSearch with CV. The models we will use: Logistic regression as a baseline, SVM, Random forest, XGBoost and LightGBM - Done, also added a pipeline as an input to use upsampling and scaling for the train set.
 9. Evaluation of the result: We will exemine confision matrix to understnd the results and compatre the results of AUC ROC of train and validation set and the reuslt to our goal, to understand if we need to improve the model or add regularization or add feautres. In addition we will look at feature imprtance and SHAP in order to understand what are the most important feautres - Done, SHAP didn't work properly, we used only feature importance.
 
-Results:
+## Results:
 
 This problem was solved best using LightGBM model. Our target was to get ROC AUC for test set higher than 88%
 
